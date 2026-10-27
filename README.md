@@ -1,5 +1,7 @@
 # Creative Claw — Nebius x NVIDIA 2026
 
+> **Source transfer pending:** this GitHub repository currently contains planning documents only. The refreshed source is prepared locally. See [the transfer plan](HACKATHON_TRANSFER.md) for the pinned revision and remaining step.
+
 General-purpose creative editing agent preparation for the Nebius x NVIDIA hackathon.
 
 **Status:** existing Creative Claw foundation plus planning documents. NVIDIA/Nebius integration and sponsor-specific orchestration are not implemented or live-tested.
