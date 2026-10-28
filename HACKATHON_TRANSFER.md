@@ -2,7 +2,7 @@
 
 Approved by the user October 27 and reaffirmed October 28, 2026. Completed October 28 using authenticated Git, with a normal fast-forward push.
 
-Source: https://github.com/bkennedyshit/creative-claw/tree/8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda
+Source: https://github.com/bkennedyshit/creative-claw/tree/64536967c0e5729cce527730d44279279a0db208
 
 Destination: https://github.com/bkennedyshit/creative-claw-nebius-2026
 

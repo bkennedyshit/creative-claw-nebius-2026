@@ -1,19 +1,18 @@
 # Source provenance
 
-Transferred October 28, 2026.
+Refreshed October 28, 2026 from current upstream main.
 
 - Source: https://github.com/bkennedyshit/creative-claw
-- Source main pin: `8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda`
+- Current source pin: `64536967c0e5729cce527730d44279279a0db208`
+- Previous source pin: `8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda`
 - Destination: https://github.com/bkennedyshit/creative-claw-nebius-2026
-- Destination preparation parent: `d8fed52ef6dab6b6a3c01c840fd06f13ba1f5257`
-- Transfer method: authenticated Git, exact Git blob/mode snapshot, normal non-force push.
-- Original repositories were read only; their branches and protection settings were not modified.
-- Destination README/plans preserved; original source README retained as HACKATHON_UPSTREAM_README.md.
-- Source licenses, third-party notices, attribution, symlinks and executable bits retained.
-- All inherited Actions workflows and the temporary transfer workflow omitted.
-- No native binaries or model weights provisioned; ignored assets are not part of a source snapshot.
-- No feature implementation or runtime validation claimed.
+- Initial approved transfer: destination commit `8f90ea7f0f6e567382edc70cdd0ba813850f0011`.
+- Refresh source: [merged PR #6](https://github.com/bkennedyshit/creative-claw/pull/6), Studio media-workspace fixes.
 
-Creative Claw main advanced by two CI-only commits after the previously verified `e68a13ca24f5de82334949861a5fe4bedc3e4316`. Their only combined change is `.github/workflows/creative-claw.yml`, which is omitted. The application source therefore matches the previously verified revision; the selected provenance pin is current main.
+Exact application source and Git file modes are copied from the pinned commit. Destination README and HACKATHON preparation documents are preserved. Source licenses and attribution are retained; the upstream README remains in HACKATHON_UPSTREAM_README.md. Inherited Actions workflows stay omitted. The temporary transfer workflow remains absent.
 
-Verification: every inherited Git blob and mode outside `.github/workflows/`, the destination README and HACKATHON documents was compared against the source tree before commit. After push, the remote main SHA and full tree must match the prepared commit. This proves source delivery, not runnable sponsor integration.
+The initial source pin included only two CI changes after the earlier verified `e68a13ca24f5de82334949861a5fe4bedc3e4316`. This refresh also includes the application changes from PR #6: scoped media workspaces, persistent paths/drafts, recoverable saved-workflow archive/restore, viewport canvas and historical output previews. These are inherited Creative Claw work, not newly implemented sponsor features.
+
+Original repositories, their protections and the running gateway were not modified. No new sponsor feature, model call, native-asset provisioning, deployment or submission was performed. Upstream PR test/build evidence is upstream evidence; this source-only copy does not claim a new runtime test.
+
+Verification: every inherited blob and file mode was compared with the pinned source tree, except preserved README/HACKATHON documents and omitted .github/workflows. A normal non-force push is followed by remote-head/tree verification.

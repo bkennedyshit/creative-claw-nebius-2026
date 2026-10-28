@@ -8,7 +8,7 @@ A general-purpose creative agent for editing user-provided photos, audio and vid
 
 Build from Creative Claw rather than a new application. This entry is an independent named copy for the competition, with a shared upstream foundation:
 https://github.com/bkennedyshit/creative-claw
-Baseline: 8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda.
+Baseline: 64536967c0e5729cce527730d44279279a0db208.
 
 ## Existing foundation versus new work
 
@@ -53,6 +53,10 @@ Keep provider-neutral fixes easy to apply to the Meta copy. Separate sponsor con
 
 ## Current upstream refresh
 
-The October 28 source transfer uses upstream 8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda, which includes the Creative Studio, editable graphs/recipes, native foreground effects and durable job UI source added since the earlier August baseline. Read extensions/creative-engines/README.md before designing more UI. Reuse these existing surfaces; confirm runtime behavior on a provisioned machine. Source inspection is not a fresh native-engine test.
+The October 28 source transfer uses upstream 64536967c0e5729cce527730d44279279a0db208, which includes the Creative Studio, editable graphs/recipes, native foreground effects and durable job UI source added since the earlier August baseline. Read extensions/creative-engines/README.md before designing more UI. Reuse these existing surfaces; confirm runtime behavior on a provisioned machine. Source inspection is not a fresh native-engine test.
 
 Visual-memory search currently uses a hash embedder described as lexical/byte similarity; do not market it as semantic vision retrieval. The new provider integration must be evaluated separately.
+
+## October 28 Studio refresh
+
+Refreshed the inherited application to Creative Claw `64536967c0e5729cce527730d44279279a0db208`, including [merged PR #6](https://github.com/bkennedyshit/creative-claw/pull/6). Media tabs now scope the workflow editor, draft/path edits are retained, saved copies can be archived/restored, the canvas follows the viewport, and historical outputs have previews. These are inherited upstream fixes, not a new NVIDIA integration. Keep the existing Studio frontend; no sponsor-specific frontend replacement is needed.
