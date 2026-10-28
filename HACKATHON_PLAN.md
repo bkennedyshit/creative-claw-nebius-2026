@@ -1,6 +1,6 @@
 # Creative Claw — Nebius x NVIDIA 2026
 
-Prepared 2026-10-26; refreshed from current upstream 2026-10-27. Status: documentation and existing foundation only; sponsor integration and new UI have not been implemented or live-tested.
+Prepared 2026-10-26; refreshed from current upstream 2026-10-28. Status: documentation and existing foundation only; sponsor integration and new UI have not been implemented or live-tested.
 
 ## Product
 
@@ -8,7 +8,7 @@ A general-purpose creative agent for editing user-provided photos, audio and vid
 
 Build from Creative Claw rather than a new application. This entry is an independent named copy for the competition, with a shared upstream foundation:
 https://github.com/bkennedyshit/creative-claw
-Baseline: e68a13ca24f5de82334949861a5fe4bedc3e4316.
+Baseline: 8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda.
 
 ## Existing foundation versus new work
 
@@ -53,6 +53,6 @@ Keep provider-neutral fixes easy to apply to the Meta copy. Separate sponsor con
 
 ## Current upstream refresh
 
-The October 27 preparation refresh uses upstream e68a13ca24f5de82334949861a5fe4bedc3e4316, which includes the Creative Studio, editable graphs/recipes, native foreground effects and durable job UI source added since the earlier August baseline. Read extensions/creative-engines/README.md before designing more UI. Reuse these existing surfaces; confirm runtime behavior on a provisioned machine. Source inspection is not a fresh native-engine test.
+The October 28 source transfer uses upstream 8ac8e2fe1f1c87353c0233eb0aaa12d07ffdeeda, which includes the Creative Studio, editable graphs/recipes, native foreground effects and durable job UI source added since the earlier August baseline. Read extensions/creative-engines/README.md before designing more UI. Reuse these existing surfaces; confirm runtime behavior on a provisioned machine. Source inspection is not a fresh native-engine test.
 
 Visual-memory search currently uses a hash embedder described as lexical/byte similarity; do not market it as semantic vision retrieval. The new provider integration must be evaluated separately.
