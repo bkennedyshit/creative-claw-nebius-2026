@@ -1,6 +1,6 @@
 # Creative Claw — Nebius x NVIDIA 2026
 
-Prepared 2026-10-26; refreshed from current upstream 2026-10-28. Status: documentation and existing foundation only; sponsor integration and new UI have not been implemented or live-tested.
+Prepared 2026-10-26; refreshed from current upstream 2026-10-28. October 29 status: isolated launch and existing custom-provider configuration are implemented; local native Studio operations have been tested. Sponsor inference and a model-driven editing loop remain unverified because no Nebius key is available. No replacement UI was needed. See HACKATHON_TESTING.md.
 
 ## Product
 
