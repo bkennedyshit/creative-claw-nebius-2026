@@ -22,6 +22,27 @@ Visual-memory storage is explicitly configured as `<profile-state>/visual-memory
 
 ## Real sponsor inference - requires the user's Nebius key
 
+### Get the key and event credits
+
+Verified against the official pages on October 29, 2026:
+
+1. Open [Nebius Token Factory](https://tokenfactory.nebius.com/) and create/sign into your account using Google or GitHub, as described in the [official quickstart](https://docs.tokenfactory.nebius.com/quickstart).
+2. Open [API keys](https://tokenfactory.nebius.com/project/api-keys), select **Create API key**, enter a descriptive name such as `creative-claw-hackathon`, then select **Create**. Save the displayed value securely: Nebius says it cannot be opened again later. See [official authentication instructions](https://docs.tokenfactory.nebius.com/api-reference/introduction#authentication).
+3. The [Devpost resources page](https://nebiusglobalaihackathon.devpost.com/resources) offers $25 in Token Factory credits through its [official credit form](https://nebius.com/promo-code?utm_promo_activation_code=NEBIUS-DEVPOST-GLOBAL26&utm_promo_code_type=Token_Factory&utm_promo_event_code=2026-devpost-global-ai-hack), using activation code **NEBIUS-DEVPOST-GLOBAL26**. It also lists another $25 through the Nebius Builders Program, linked on that resources page. Applying for credits does not itself create an API key or prove credits have been granted; verify the balance in your account before inference.
+4. Keep the key out of chat, screenshots, browser frontend code and Git. Set `NEBIUS_API_KEY` in the terminal that launches the sponsor gateway and in the shell used for its smoke test. For a masked, process-only PowerShell prompt:
+
+   ```powershell
+   $nebiusSecret = Read-Host 'Nebius API key' -AsSecureString
+   $env:NEBIUS_API_KEY = [System.Net.NetworkCredential]::new('', $nebiusSecret).Password
+   Remove-Variable nebiusSecret
+   ```
+
+5. Stop the local test gateway before starting the sponsor profile: both use port 18990 by default. Follow the sponsor commands below. A valid key, available NVIDIA model and usable account balance must all be checked through a real call.
+
+The [official FAQ](https://nebiusglobalaihackathon.devpost.com/details/faqs) confirms these are Token Factory credits, not a separate AI Cloud grant; it also confirms the rest of the app can remain local when it calls NVIDIA inference through Token Factory. No signup, credit application or billing action has been performed on your behalf.
+
+### Run the sponsor profile
+
 ```powershell
 # Supply NEBIUS_API_KEY securely in this process environment; do not commit it.
 node scripts/nebius-hackathon.mjs setup
