@@ -60,6 +60,14 @@ Normal start/smoke fail explicitly when the key is absent. `check` exits 2 witho
 
 ## Acceptance before calling the entry ready
 
+### Verified sponsor execution on October 30
+
+The actual Creative Claw gateway used `nvidia/nemotron-3-super-120b-a12b` through `https://api.tokenfactory.nebius.com/v1`. Discovery run `d9aa0dd4-e50e-4412-91d7-515ff9d47cc2` executed `image.list_ops`; editing run `67901474-9ace-4c2a-8f6f-f4309fbbdb36` executed `image.apply` to invert a synthetic image and save a separate output. Both traces named Nebius as the winning provider, NVIDIA Nemotron as the winning model, no fallback and zero tool failures. All output RGB bytes were verified against `255 - source`. This proves real hosted model/tool execution, not just a connectivity request.
+
+For this development checkout, the user supplies `NEBIUS_API_KEY` once in the Git-excluded `.env.nebius` file. Launch with Node 24's explicit env-file option: `node --env-file=.env.nebius scripts/nebius-hackathon.mjs start`. Open the sponsor dashboard with `node --env-file=.env.nebius scripts/nebius-hackathon.mjs dashboard`. This explicitly loads the file; the helper does not auto-load it. Never publish it. The earlier missing-key status below describes October 29, before credentials were provided.
+
+An interactive browser preview/correction demo, GPU broker demonstration, public video, judge access and final submission still require completion. Discovery and inversion do not prove all advertised engine operations or GPU acceleration.
+
 ### Verified locally on October 29
 
 - Upstream application baseline: `64536967c0e5729cce527730d44279279a0db208`; its Studio fixes remain inherited work.

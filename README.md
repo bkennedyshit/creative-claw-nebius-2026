@@ -6,7 +6,7 @@
 
 General-purpose creative editing agent preparation for the Nebius x NVIDIA hackathon.
 
-**Status (October 29):** latest inherited Creative Claw foundation plus isolated local/sponsor launch configuration. The full build, setup tests and real local Studio image/video operations passed. NVIDIA inference through Nebius remains unverified: no API key is available yet. See [testing and launch instructions](HACKATHON_TESTING.md).
+**Status (October 30):** the application successfully used NVIDIA Nemotron through Nebius Token Factory to discover native image operations and execute an image inversion. Every output pixel was checked; the runtime trace recorded no provider fallback or tool failures. Full build and local image/video checks also passed. Demo recording, judge access and submission remain to complete. See [testing and launch instructions](HACKATHON_TESTING.md).
 
 - [Competition direction and provenance](HACKATHON_PLAN.md)
 - [Models, memory and VR decisions](HACKATHON_MODELS.md)
